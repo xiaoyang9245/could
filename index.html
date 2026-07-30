@@ -739,7 +739,7 @@
             </div>
 
             <!-- 季节轮换模块 -->
-            <div class="current-season-label" id="currentSeasonLabel">✦ 当前大陆季节 ✦</div>
+            <div class="current-season-label" id="currentSeasonLabel">✦ 当前季节 ✦</div>
             <div class="season-indicator">
                 <div class="season-card" id="season-spring"><span class="season-emoji">🌸</span><span class="season-name"></span></div>
                 <div class="season-card" id="season-summer"><span class="season-emoji">☀️</span><span class="season-name"></span></div>
@@ -1129,7 +1129,7 @@
             statusText.textContent = '在线运行';
             playerTag.style.display = 'flex';
             if (typeof online === 'number' && online > 0 && typeof max === 'number') {
-                playerText.textContent = `${online} / ${max} 人`;
+                playerText.textContent = `${online} / ${max} `;
                 if (online >= max) playerText.style.color = '#ff9999';
                 else if (online > max * 0.7) playerText.style.color = '#ffcc66';
                 else playerText.style.color = '#99ff99';
